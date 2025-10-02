@@ -1,0 +1,23 @@
+[
+  {
+    "ContainingType": "PDFGenerationServer.Controllers.OrdersController",
+    "Method": "GenerateOrdersPdf",
+    "RelativePath": "api/Orders/GeneratePdf",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PDFGenerationServer.Models.DTO.ReportRequestDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "Correlation-ID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

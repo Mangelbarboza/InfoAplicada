@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "ProyectoInfoAplicada.Controllers.ReportsController",
+    "Method": "EnqueueReport",
+    "RelativePath": "api/reports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ProyectoInfoAplicada.Dto.ReportSimpleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

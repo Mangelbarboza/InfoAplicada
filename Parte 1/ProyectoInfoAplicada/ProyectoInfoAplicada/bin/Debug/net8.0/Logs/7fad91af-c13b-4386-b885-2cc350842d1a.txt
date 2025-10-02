@@ -1,0 +1,1 @@
+[2025-09-24 06:29:32Z] Validación fallida: CustomerId inválido (0)

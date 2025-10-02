@@ -1,0 +1,2 @@
+[2025-09-24 07:04:21Z] Solicitud recibida. CustomerId=29487, Start=2011-05-31T00:00:00.0000000, End=2013-05-30T00:00:00.0000000, HoraSolicitud=2025-09-24T07:04:21.1967522Z
+{"correlationId":"6740f53e-4107-4fe1-8624-21485e3026e2","service":"PdfGenerationServer","endpoint":"/api/reports","timeStamp":"2025-09-24T07:04:21.1988185Z","payload":{"customerId":29487,"startDate":"2011-05-31T00:00:00","endDate":"2013-05-30T00:00:00"},"success":true}

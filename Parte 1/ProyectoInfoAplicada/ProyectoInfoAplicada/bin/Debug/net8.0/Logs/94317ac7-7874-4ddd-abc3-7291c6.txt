@@ -1,0 +1,7 @@
+[2025-09-24 04:35:06Z] Validación fallida: CustomerId 500000 no existe
+[2025-09-24 04:35:21Z] Solicitud recibida. CustomerId=29489, From=2000-05-31T00:00:00.0000000, To=2013-05-30T00:00:00.0000000, HoraSolicitud=2025-09-24T04:35:21.9741992Z
+[2025-09-24 04:35:21Z] Job programado. JobId=14. DelayMinutes=5
+[2025-09-24 04:40:35Z] Job comenzado. Llamando a http://localhost:5100/api/pdf/generate
+[2025-09-24 04:40:35Z] Endpoint /api/pdf/generate recibido. Iniciando generación de PDF.
+[2025-09-24 04:40:35Z] PDF guardado en: C:\Users\Usuario\source\repos\ProyectoInfoAplicada\ProyectoInfoAplicada\bin\Debug\net8.0\GeneratedReports\94317ac7-7874-4ddd-abc3-7291c6_20250924044035.pdf
+[2025-09-24 04:40:35Z] PDF generado correctamente. Resp: {"filePath":"C:\\Users\\Usuario\\source\\repos\\ProyectoInfoAplicada\\ProyectoInfoAplicada\\bin\\Debug\\net8.0\\GeneratedReports\\94317ac7-7874-4ddd-abc3-7291c6_20250924044035.pdf"}

@@ -1,0 +1,1 @@
+{"correlationId":"e77052c4-f74d-4c7a-a724-414eb46d102b","service":"PdfGenerationServer","endpoint":"/api/reports","timeStamp":"2025-09-24T08:21:40.6987265Z","payload":{"customerId":29487,"startDate":"2012-05-31T00:00:00","endDate":"2013-05-30T00:00:00"},"success":true}
