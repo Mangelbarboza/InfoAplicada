@@ -3594,23 +3594,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\angel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive - Universidad de Costa Rica\\GAMCInfoAplicada\\ProyectoInfoAplicada\\ProyectoInfoAplicada\\ProyectoInfoAplicada.csproj",
+      "projectUniqueName": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\ProyectoInfoAplicada\\ProyectoInfoAplicada\\ProyectoInfoAplicada.csproj",
       "projectName": "ProyectoInfoAplicada",
-      "projectPath": "C:\\Users\\User\\OneDrive - Universidad de Costa Rica\\GAMCInfoAplicada\\ProyectoInfoAplicada\\ProyectoInfoAplicada\\ProyectoInfoAplicada.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive - Universidad de Costa Rica\\GAMCInfoAplicada\\ProyectoInfoAplicada\\ProyectoInfoAplicada\\obj\\",
+      "projectPath": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\ProyectoInfoAplicada\\ProyectoInfoAplicada\\ProyectoInfoAplicada.csproj",
+      "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\ProyectoInfoAplicada\\ProyectoInfoAplicada\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
