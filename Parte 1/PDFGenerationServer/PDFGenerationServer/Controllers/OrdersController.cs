@@ -21,7 +21,7 @@ namespace PDFGenerationServer.Controllers
         [HttpPost("GeneratePdf")]
         public async Task<IActionResult> GenerateOrdersPdf([FromBody] ReportRequestDTO request, [FromHeader(Name = "Correlation-ID")] string correlationId)
         {
-            
+             
             var customerId = request.CustomerId;
             var startDate = request.StartDate;
             var endDate = request.EndDate;

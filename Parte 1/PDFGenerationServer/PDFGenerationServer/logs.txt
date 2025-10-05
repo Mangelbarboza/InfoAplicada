@@ -178,3 +178,63 @@
   },
   "Success": true
 }
+{
+  "CorrelationId": "5633a390-efce-49d3-afc8-53a99e031f98",
+  "Service": "PdfGenerationServer",
+  "Endpoint": "/api/orders/GeneratePdf",
+  "TimeStrap": "2025-10-05T08:32:08.4982868Z",
+  "Playload": {
+    "CustomerId": 29811,
+    "StartDate": "2011-05-31T00:00:00",
+    "EndDate": "2013-08-30T00:00:00"
+  },
+  "Success": true
+}
+{
+  "CorrelationId": "bee68cad-79e5-4046-8e7d-d522ab8eb661",
+  "Service": "PdfGenerationServer",
+  "Endpoint": "/api/orders/GeneratePdf",
+  "TimeStrap": "2025-10-05T22:26:56.2787363Z",
+  "Playload": {
+    "CustomerId": 29811,
+    "StartDate": "2011-05-31T00:00:00",
+    "EndDate": "2013-08-30T00:00:00"
+  },
+  "Success": true
+}
+{
+  "CorrelationId": "a32eebc8-8177-4823-a213-ab1daf6c9fcc",
+  "Service": "PdfGenerationServer",
+  "Endpoint": "/api/orders/GeneratePdf",
+  "TimeStrap": "2025-10-05T22:30:26.5306061Z",
+  "Playload": {
+    "CustomerId": 29811,
+    "StartDate": "2011-05-31T00:00:00",
+    "EndDate": "2013-08-30T00:00:00"
+  },
+  "Success": true
+}
+{
+  "CorrelationId": "aaf049af-ca9c-4f35-af00-fa7518a880f4",
+  "Service": "PdfGenerationServer",
+  "Endpoint": "/api/orders/GeneratePdf",
+  "TimeStrap": "2025-10-05T22:35:26.8518853Z",
+  "Playload": {
+    "CustomerId": 29811,
+    "StartDate": "2011-05-31T00:00:00",
+    "EndDate": "2013-08-30T00:00:00"
+  },
+  "Success": true
+}
+{
+  "CorrelationId": "b9da476c-649d-4ea5-b5f1-d429df0debf4",
+  "Service": "PdfGenerationServer",
+  "Endpoint": "/api/orders/GeneratePdf",
+  "TimeStrap": "2025-10-05T22:49:27.4625406Z",
+  "Playload": {
+    "CustomerId": 29811,
+    "StartDate": "2011-05-31T00:00:00",
+    "EndDate": "2013-08-30T00:00:00"
+  },
+  "Success": true
+}
