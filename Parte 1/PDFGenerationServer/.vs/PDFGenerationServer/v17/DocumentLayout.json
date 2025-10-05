@@ -7,28 +7,48 @@
       "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\db\\salesorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\models\\db\\salesorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\db\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\models\\db\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\services\\pdfreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\services\\pdfreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\dto\\reportrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\models\\dto\\reportrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\db\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\models\\db\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\data\\ordersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\data\\ordersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\logs.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\logs.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\pdfgenerationserver.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\pdfgenerationserver.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\pdfgenerationserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\pdfgenerationserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\db\\salesorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\models\\db\\salesorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\dto\\reportrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\models\\dto\\reportrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\data\\filelogproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\dto\\logmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\models\\dto\\logmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\pdfgenerationserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|solutionrelative:pdfgenerationserver\\pdfgenerationserver.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33F2DF05-B18B-4828-B71D-327D8CBC57A9}|PDFGenerationServer\\PDFGenerationServer.csproj|c:\\users\\angel\\onedrive\\escritorio\\infoaplicada proyecto\\infoaplicada\\parte 1\\pdfgenerationserver\\pdfgenerationserver\\models\\db\\salesorderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,14 +99,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Program.cs",
-              "RelativeDocumentMoniker": "PDFGenerationServer\\Program.cs",
-              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Program.cs",
-              "RelativeToolTip": "PDFGenerationServer\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DB\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\AppDbContext.cs",
+              "RelativeToolTip": "PDFGenerationServer\\Models\\DB\\AppDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:44:08.439Z"
+              "WhenOpened": "2025-10-03T05:02:46.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "logs.txt",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\logs.txt",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\logs.txt",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\logs.txt",
+              "RelativeToolTip": "PDFGenerationServer\\logs.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-03T04:59:45.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PDFGenerationServer.csproj.Backup.tmp",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\PDFGenerationServer.csproj.Backup.tmp",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\PDFGenerationServer.csproj.Backup.tmp",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\PDFGenerationServer.csproj.Backup.tmp",
+              "RelativeToolTip": "PDFGenerationServer\\PDFGenerationServer.csproj.Backup.tmp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-03T04:59:43.031Z"
             },
             {
               "$type": "Document",
@@ -100,7 +140,7 @@
               "RelativeDocumentMoniker": "PDFGenerationServer\\Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "PDFGenerationServer\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswBcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T01:42:23.612Z",
               "EditorCaption": ""
@@ -108,6 +148,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PdfReportService.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Services\\PdfReportService.cs",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\Services\\PdfReportService.cs",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Services\\PdfReportService.cs",
+              "RelativeToolTip": "PDFGenerationServer\\Services\\PdfReportService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T04:19:01.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\Product.cs",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DB\\Product.cs",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\Product.cs",
+              "RelativeToolTip": "PDFGenerationServer\\Models\\DB\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T21:23:51.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\appsettings.json",
               "RelativeDocumentMoniker": "PDFGenerationServer\\appsettings.json",
@@ -119,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "FileLogProducer.cs",
               "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Data\\FileLogProducer.cs",
               "RelativeDocumentMoniker": "PDFGenerationServer\\Data\\FileLogProducer.cs",
@@ -131,55 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SalesOrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
-              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
-              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
-              "RelativeToolTip": "PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T18:43:25.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LogMessageDTO.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
-              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
-              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
-              "RelativeToolTip": "PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T00:49:48.002Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ReportRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
-              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
-              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
-              "RelativeToolTip": "PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T00:03:08.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PdfReportService.cs",
-              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Services\\PdfReportService.cs",
-              "RelativeDocumentMoniker": "PDFGenerationServer\\Services\\PdfReportService.cs",
-              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Services\\PdfReportService.cs",
-              "RelativeToolTip": "PDFGenerationServer\\Services\\PdfReportService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwC8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T04:19:01.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "OrdersData.cs",
               "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Data\\OrdersData.cs",
               "RelativeDocumentMoniker": "PDFGenerationServer\\Data\\OrdersData.cs",
@@ -192,6 +208,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "SalesOrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
+              "RelativeToolTip": "PDFGenerationServer\\Models\\DB\\SalesOrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:43:25.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PDFGenerationServer.http",
               "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\PDFGenerationServer.http",
               "RelativeDocumentMoniker": "PDFGenerationServer\\PDFGenerationServer.http",
@@ -203,7 +231,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Program.cs",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\Program.cs",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Program.cs",
+              "RelativeToolTip": "PDFGenerationServer\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T23:44:08.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LogMessageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
+              "RelativeToolTip": "PDFGenerationServer\\Models\\DTO\\LogMessageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T00:49:48.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReportRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
+              "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
+              "ToolTip": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
+              "RelativeToolTip": "PDFGenerationServer\\Models\\DTO\\ReportRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T00:03:08.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ILogProducer.cs",
               "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Services\\ILogProducer.cs",
               "RelativeDocumentMoniker": "PDFGenerationServer\\Services\\ILogProducer.cs",
@@ -215,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "SalesOrderHeader.cs",
               "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Models\\DB\\SalesOrderHeader.cs",
               "RelativeDocumentMoniker": "PDFGenerationServer\\Models\\DB\\SalesOrderHeader.cs",
@@ -227,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\angel\\OneDrive\\Escritorio\\InfoAplicada PROYECTO\\InfoAplicada\\Parte 1\\PDFGenerationServer\\PDFGenerationServer\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PDFGenerationServer\\Properties\\launchSettings.json",

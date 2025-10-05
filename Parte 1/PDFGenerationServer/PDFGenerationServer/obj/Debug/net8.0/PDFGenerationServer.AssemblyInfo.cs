@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PDFGenerationServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9a9a3d8755a9ac06cb29d53f294dc2aa2be962b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d0534e9196c57950923348f8c1ed39d3ac1b1c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PDFGenerationServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PDFGenerationServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

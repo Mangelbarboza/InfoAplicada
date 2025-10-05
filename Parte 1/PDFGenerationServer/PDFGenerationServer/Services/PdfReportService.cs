@@ -4,19 +4,23 @@ using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using QuestPDF.Companion;
 using System.Globalization;
+using System.Net.Http;  // Angel: lo agregue para la conexion con el api del local storage
+using System.Net.Http.Headers;
 
 namespace PDFGenerationServer.Services
 {
     public class PdfReportService
     {
         private readonly OrdersData _orders;
+        private static readonly HttpClient _httpClient = new HttpClient();  // Ángel: Se inicializa el cliente HTTP aquí, una sola vez.
 
         public PdfReportService(OrdersData orders)
         {
             _orders = orders;
+           
         }
 
-        public async Task<String> GenerateReportPDF(int customerId, DateTime startDate, DateTime endDate)
+        public async Task<string> GenerateReportPDF(int customerId, DateTime startDate, DateTime endDate, string correlationId)
         {
             var orders = await _orders.GetOrdersByCustomer(customerId, startDate, endDate);
 
@@ -25,15 +29,6 @@ namespace PDFGenerationServer.Services
                 return null;
             }
 
-            var folderPath = Path.Combine("wwwroot", "reports", DateTime.Now.ToString("yyyy-MM-dd"));
-            if (!Directory.Exists(folderPath)) 
-            { 
-                Directory.CreateDirectory(folderPath);
-            }
-
-            var fileName = $"Orders_{customerId}_{DateTime.Now:HHmmss}.pdf";
-            var filePath = Path.Combine(folderPath, fileName);
-            // Generar PDF
             var document = Document.Create(container =>
             {
                 container.Page(page =>
@@ -47,16 +42,14 @@ namespace PDFGenerationServer.Services
                     page.Content()
                         .Table(table =>
                         {
-                            //Columnas de la tabla
                             table.ColumnsDefinition(columns =>
                             {
-                                columns.RelativeColumn(1); // GUIA
-                                columns.RelativeColumn(1); // SalesOrderId
-                                columns.RelativeColumn(1); // Fecha
-                                columns.RelativeColumn(1); // Total
+                                columns.RelativeColumn(1);
+                                columns.RelativeColumn(1);
+                                columns.RelativeColumn(1);
+                                columns.RelativeColumn(1);
                             });
 
-                            // Header de tabla
                             table.Header(header =>
                             {
                                 header.Cell().BorderBottom(2).Padding(8).Text("#").SemiBold();
@@ -65,7 +58,6 @@ namespace PDFGenerationServer.Services
                                 header.Cell().BorderBottom(2).Padding(8).Text("Total").SemiBold();
                             });
 
-                            // Filas
                             int i = 1;
                             foreach (var order in orders)
                             {
@@ -84,12 +76,34 @@ namespace PDFGenerationServer.Services
                 });
             });
 
-            //  Guardar archivo
-            document.GeneratePdf(filePath);
-            //document.ShowInCompanion();
-            
-            return filePath;
+            // Ángel: Cambié el método para que se genere en memoria y se envíe a la API.
+            using var stream = new MemoryStream();
+            document.GeneratePdf(stream);
+            stream.Position = 0;
 
+            var storageServerUrl = "http://127.0.0.1:8000/api/storage/upload";
+            var fileName = $"Orders_{customerId}_{DateTime.Now:yyyyMMddHHmmss}.pdf";
+
+            using var form = new MultipartFormDataContent();
+            form.Add(new StringContent(correlationId), "correlationId");
+            form.Add(new StringContent(customerId.ToString()), "clientId");
+            form.Add(new StringContent(fileName), "fileName");
+            form.Add(new StreamContent(stream), "file", fileName);
+
+            var response = await _httpClient.PostAsync(storageServerUrl, form);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"PDF con Correlation ID {correlationId} enviado al Storage Server.");
+                return $"Archivo {fileName} guardado en el Storage Server.";
+            }
+            else
+            {
+                Console.WriteLine($"Error al enviar el PDF al Storage Server. Código: {response.StatusCode}");
+                var errorContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Contenido del error: {errorContent}");
+                throw new Exception("Error al subir el archivo al Storage Server.");
+            }
         }
     }
 }

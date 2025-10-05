@@ -25,7 +25,7 @@ namespace PDFGenerationServer.Controllers
             var customerId = request.CustomerId;
             var startDate = request.StartDate;
             var endDate = request.EndDate;
-            var filePath = await _pdfService.GenerateReportPDF(customerId, startDate, endDate);
+            var filePath = await _pdfService.GenerateReportPDF(customerId, startDate, endDate, correlationId);
             // Llama al servicio que ya genera el PDF
             //var filePath = await _pdfService.GenerateReportPDF(customerId, startDate, endDate);
 
