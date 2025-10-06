@@ -21,11 +21,11 @@ namespace PDFGenerationServer.Controllers
         [HttpPost("GeneratePdf")]
         public async Task<IActionResult> GenerateOrdersPdf([FromBody] ReportRequestDTO request, [FromHeader(Name = "Correlation-ID")] string correlationId)
         {
-            
+             
             var customerId = request.CustomerId;
             var startDate = request.StartDate;
             var endDate = request.EndDate;
-            var filePath = await _pdfService.GenerateReportPDF(customerId, startDate, endDate);
+            var filePath = await _pdfService.GenerateReportPDF(customerId, startDate, endDate, correlationId);
             // Llama al servicio que ya genera el PDF
             //var filePath = await _pdfService.GenerateReportPDF(customerId, startDate, endDate);
 
@@ -48,7 +48,7 @@ namespace PDFGenerationServer.Controllers
                 CorrelationId = correlationId,
                 Service = "PdfGenerationServer",
                 Endpoint = "/api/orders/GeneratePdf",
-                TimeStrap = DateTime.UtcNow,
+                TimeStrap = DateTime.UtcNow.ToString("o"),
                 Playload = new ReportRequestDTO
                 {
                     CustomerId = customerId,

@@ -2,38 +2,47 @@
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
-using QuestPDF.Companion;
 using System.Globalization;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.IO;
+using System.Threading.Tasks;
+using PDFGenerationServer.Models.DTO; // Para LogMessageDTO
+using System.Linq;
 
 namespace PDFGenerationServer.Services
 {
     public class PdfReportService
     {
         private readonly OrdersData _orders;
+        private static readonly HttpClient _httpClient = new HttpClient();
+        private readonly ILogProducer _logProducer; // Ángel: Se inyecta la dependencia aquí.
 
-        public PdfReportService(OrdersData orders)
+        public PdfReportService(OrdersData orders, ILogProducer logProducer)
         {
             _orders = orders;
+            _logProducer = logProducer;
         }
 
-        public async Task<String> GenerateReportPDF(int customerId, DateTime startDate, DateTime endDate)
+        public async Task<string> GenerateReportPDF(int customerId, DateTime startDate, DateTime endDate, string correlationId)
         {
             var orders = await _orders.GetOrdersByCustomer(customerId, startDate, endDate);
 
             if (!orders.Any())
             {
+                var errorLog = new LogMessageDTO
+                {
+                    CorrelationId = correlationId,
+                    Service = "PDF Server",
+                    Endpoint = "/api/Orders/GeneratePdf",
+                    TimeStrap = DateTime.UtcNow.ToString("o"),
+                    Playload = new { error = "No se encontraron órdenes para el cliente." },
+                    Success = false
+                };
+                await _logProducer.sendLog(errorLog);
                 return null;
             }
 
-            var folderPath = Path.Combine("wwwroot", "reports", DateTime.Now.ToString("yyyy-MM-dd"));
-            if (!Directory.Exists(folderPath)) 
-            { 
-                Directory.CreateDirectory(folderPath);
-            }
-
-            var fileName = $"Orders_{customerId}_{DateTime.Now:HHmmss}.pdf";
-            var filePath = Path.Combine(folderPath, fileName);
-            // Generar PDF
             var document = Document.Create(container =>
             {
                 container.Page(page =>
@@ -47,16 +56,14 @@ namespace PDFGenerationServer.Services
                     page.Content()
                         .Table(table =>
                         {
-                            //Columnas de la tabla
                             table.ColumnsDefinition(columns =>
                             {
-                                columns.RelativeColumn(1); // GUIA
-                                columns.RelativeColumn(1); // SalesOrderId
-                                columns.RelativeColumn(1); // Fecha
-                                columns.RelativeColumn(1); // Total
+                                columns.RelativeColumn(1);
+                                columns.RelativeColumn(1);
+                                columns.RelativeColumn(1);
+                                columns.RelativeColumn(1);
                             });
 
-                            // Header de tabla
                             table.Header(header =>
                             {
                                 header.Cell().BorderBottom(2).Padding(8).Text("#").SemiBold();
@@ -65,7 +72,6 @@ namespace PDFGenerationServer.Services
                                 header.Cell().BorderBottom(2).Padding(8).Text("Total").SemiBold();
                             });
 
-                            // Filas
                             int i = 1;
                             foreach (var order in orders)
                             {
@@ -79,17 +85,55 @@ namespace PDFGenerationServer.Services
 
                     page.Footer()
                         .AlignCenter()
-                        .Text($"Generado: {DateTime.Now:yyyy-MM-dd HH:mm:ss} |  ID Usuario: {customerId}")
+                        .Text($"Generado: {DateTime.Now:yyyy-MM-dd HH:mm:ss} | ID Usuario: {customerId}")
                         .FontSize(10);
                 });
             });
 
-            //  Guardar archivo
-            document.GeneratePdf(filePath);
-            //document.ShowInCompanion();
-            
-            return filePath;
+            using var stream = new MemoryStream();
+            document.GeneratePdf(stream);
+            stream.Position = 0;
 
+            var storageServerUrl = "http://127.0.0.1:8000/api/storage/upload";
+            var fileName = $"{correlationId}_Orders_{customerId}_{DateTime.Now:yyyyMMddHHmmss}.pdf";
+
+            using var form = new MultipartFormDataContent();
+            form.Add(new StringContent(correlationId), "correlationId");
+            form.Add(new StringContent(customerId.ToString()), "clientId");
+            form.Add(new StringContent(fileName), "fileName");
+            form.Add(new StreamContent(stream), "file", fileName);
+
+            var response = await _httpClient.PostAsync(storageServerUrl, form);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var logMessage = new LogMessageDTO
+                {
+                    CorrelationId = correlationId,
+                    Service = "PDF Server",
+                    Endpoint = "/api/storage/upload",
+                    TimeStrap = DateTime.UtcNow.ToString("o"),
+                    Playload = new { fileName = fileName },
+                    Success = true
+                };
+                await _logProducer.sendLog(logMessage);
+                return $"Archivo {fileName} guardado en el Storage Server.";
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                var errorLog = new LogMessageDTO
+                {
+                    CorrelationId = correlationId,
+                    Service = "PDF Server",
+                    Endpoint = "/api/storage/upload",
+                    TimeStrap = DateTime.UtcNow.ToString("o"),
+                    Playload = new { error = errorContent },
+                    Success = false
+                };
+                await _logProducer.sendLog(errorLog);
+                throw new Exception("Error al subir el archivo al Storage Server.");
+            }
         }
     }
 }

@@ -21,8 +21,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //Logs
-builder.Services.AddSingleton<ILogProducer>(sp => new FileLogProducer()); 
+builder.Services.AddSingleton<ILogProducer>(sp => new FileLogProducer());
+// Inicializacion del kafka
+builder.Services.AddSingleton<ILogProducer>(new KafkaLogProducerService("localhost:9092", "logs-pdf"));
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

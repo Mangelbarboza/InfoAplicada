@@ -22,14 +22,13 @@ namespace ProyectoInfoAplicada.Controllers
         private readonly IBackgroundJobClient _backgroundJobClient;
         private readonly ISendPdfEnpointService _reportJobService;
 
-
         public ReportsController(
-                                 ILogger<ReportsController> logger,
-                                 ILoggerService fileLogger,
-                                 IConfiguration config,
-                                 ICustomerRepository customerRepository,
-                                 IBackgroundJobClient backgroundJobClient,
-                                 ISendPdfEnpointService reportJobService)
+                                     ILogger<ReportsController> logger,
+                                     ILoggerService fileLogger,
+                                     IConfiguration config,
+                                     ICustomerRepository customerRepository,
+                                     IBackgroundJobClient backgroundJobClient,
+                                     ISendPdfEnpointService reportJobService)
         {
             _consoleLogger = logger;
             _fileLogger = fileLogger;
@@ -37,7 +36,6 @@ namespace ProyectoInfoAplicada.Controllers
             _customerRepository = customerRepository;
             _backgroundJobClient = backgroundJobClient;
             _reportJobService = reportJobService;
-
         }
 
         [HttpPost]
@@ -73,8 +71,7 @@ namespace ProyectoInfoAplicada.Controllers
                 return BadRequest(new { Error = "StartDate debe ser <= EndDate", CorrelationId = req.CorrelationId });
             }
 
-            // 3) Validar existencia del cliente — 
-
+            // 3) Validar existencia del cliente
             if (!await IsValidCustomerAsync(req.CustomerId))
             {
                 await _fileLogger.AppendSimpleLog(req.CorrelationId, $"Validación fallida: CustomerId {req.CustomerId} no existe");
@@ -84,11 +81,6 @@ namespace ProyectoInfoAplicada.Controllers
             // 4) Log de recepción (Serilog/Console + archivo por Correlation)
             _consoleLogger.LogInformation("Reporte solicitado. CustomerId={cid}, Start={start}, End={end}, CorrelationId={corr}",
                 req.CustomerId, req.StartDate, req.EndDate, req.CorrelationId);
-           
-            
-            // 5) Determinar delay (por defecto 5 minutos si no se pasa DelayMinutes)
-            var defaultDelay = _config.GetValue<int?>("DefaultDelayMinutes") ?? 5;
-            var delayMinutes = (req.DelayMinutes.HasValue && req.DelayMinutes.Value >= 0) ? req.DelayMinutes.Value : defaultDelay;
 
             var payload = new
             {
@@ -97,22 +89,30 @@ namespace ProyectoInfoAplicada.Controllers
                 EndDate = req.EndDate
             };
 
-            // nombre del servicio y endpoint que quieres dejar en el log
+            // Ángel: Lógica para enviar el log de la petición a Kafka
             await _fileLogger.AppendCompletePetitionLog(
                 req.CorrelationId!,
-                service: "PdfGenerationServer",
-                endpoint: "/api/reports",              
+                service: "Hangfire Server", // Nombre del servicio
+                endpoint: "/api/reports", // Endpoint invocado
                 payload: payload,
-                success: true                           // recepción fue OK
+                success: true
             );
 
-            //ESTO ENCOLA A HANGIFRE fijese si InvokeGeneralPdfInteral sirve para llamar a su endpoint xd
-            // 6) Programar job que llamará internamente al servicio de jobs 
-            //Llamar al endpoint 
-            var jobId = _backgroundJobClient.Schedule<ISendPdfEnpointService>(
-            svc => _reportJobService.SendToPdfEndpoint(req),             
-            TimeSpan.FromMinutes(delayMinutes));
+            // 5) Determinar delay
+            var defaultDelay = _config.GetValue<int?>("DefaultDelayMinutes") ?? 5;
+            var delayMinutes = (req.DelayMinutes.HasValue && req.DelayMinutes.Value >= 0) ? req.DelayMinutes.Value : defaultDelay;
 
+            // 6) Programar job en Hangfire para que llame al servicio SendToPdfEndpoint
+            var jobId = _backgroundJobClient.Schedule<ISendPdfEnpointService>(
+                svc => svc.SendToPdfEndpoint(
+                    new ReportSimpleRequest
+                    {
+                        CorrelationId = req.CorrelationId!,
+                        CustomerId = req.CustomerId,
+                        StartDate = req.StartDate,
+                        EndDate = req.EndDate
+                    }),
+                TimeSpan.FromMinutes(delayMinutes));
 
             // 7) Responder 202 Accepted con metadata
             return Accepted(new { CorrelationId = req.CorrelationId, ScheduledInMinutes = delayMinutes });
@@ -120,10 +120,7 @@ namespace ProyectoInfoAplicada.Controllers
 
         private Task<bool> IsValidCustomerAsync(int customerId)
         {
-            //comprobar en DB si el cliente existe.
             return _customerRepository.ExistsCustomerIdAsync(customerId);
-
         }
     }
-
 }
