@@ -1,0 +1,46 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vsp
+*.pdb
+*.obj
+*.exe
+*.dll
+*.lib
+*.ncb
+*.tlog
+*.idb
+*.opensdf
+*.sdf
+*_i.c
+*_p.c
+*.ilk
+*.aps
+*.bsc
+*.sbr
+*.res
+*.resX
+*.pch
+*.pif
+*.psess
+*.vsw
+*.vspscc
+*.vssscc
+
+# Logs
+**/Logs/
+*.log
+
+# C# y .NET
+bin/
+obj/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+*.pdf

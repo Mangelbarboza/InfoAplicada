@@ -25,7 +25,8 @@ builder.Services.AddHttpClient();
 
 //registrar servicios
 
-builder.Services.AddSingleton<ILoggerService, LoggerService>();
+// builder.Services.AddSingleton<ILoggerService, LoggerService>(); Esta guardaba las cosas local, yano xd
+builder.Services.AddSingleton<ILoggerService>(sp => new KafkaLogProducerService("localhost:9092", "logs-hangfire")); // Instancia del kafka
 builder.Services.AddScoped<ICustomerRepository, CustomerRepositoryDapper>();
 builder.Services.AddScoped<ISendPdfEnpointService, SendPdfEndpointService>();
 

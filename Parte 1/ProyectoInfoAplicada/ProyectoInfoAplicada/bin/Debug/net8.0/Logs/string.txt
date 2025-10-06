@@ -1,2 +1,0 @@
-[2025-10-03 21:32:09Z] Validación fallida: CustomerId inválido (0)
-[2025-10-05 07:34:08Z] Validación fallida: CustomerId 2 no existe

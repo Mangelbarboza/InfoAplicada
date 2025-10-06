@@ -1,1 +1,0 @@
-[2025-09-24 08:23:29Z] Validación fallida: CustomerId 50000000 no existe

@@ -48,7 +48,7 @@ namespace PDFGenerationServer.Controllers
                 CorrelationId = correlationId,
                 Service = "PdfGenerationServer",
                 Endpoint = "/api/orders/GeneratePdf",
-                TimeStrap = DateTime.UtcNow,
+                TimeStrap = DateTime.UtcNow.ToString("o"),
                 Playload = new ReportRequestDTO
                 {
                     CustomerId = customerId,
