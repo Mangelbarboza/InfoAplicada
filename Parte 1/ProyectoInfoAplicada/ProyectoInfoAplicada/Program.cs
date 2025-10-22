@@ -29,6 +29,8 @@ builder.Services.AddHttpClient();
 builder.Services.AddSingleton<ILoggerService>(sp => new KafkaLogProducerService("localhost:9092", "logs-hangfire")); // Instancia del kafka
 builder.Services.AddScoped<ICustomerRepository, CustomerRepositoryDapper>();
 builder.Services.AddScoped<ISendPdfEnpointService, SendPdfEndpointService>();
+//builder.Services.AddScoped<ISendNewDiscordMessage, sendMessage>();
+builder.Services.AddScoped<ISendNewEmailService, SendNewEmailService>();
 
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
    .AddNegotiate();
