@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+httpx[http2]
+aiosmtplib
+pydantic
+python-multipart
+kafka-python
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
