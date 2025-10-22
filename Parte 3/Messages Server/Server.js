@@ -1,19 +1,9 @@
-// Importar Express
-const express = require('express');
-const app = express();
+require('dotenv').config();
+const app = require('./src/app');
+const logger = require('./src/utils/logger');
 
-// Puerto del servidor
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Middleware para manejar JSON
-app.use(express.json());
-
-// Ruta principal
-app.get('/', (req, res) => {
-  res.send('Servidor Express funcionando correctamente jajaja🚀');
-});
-
-// Iniciar el servidor
 app.listen(PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+  logger.info(` Messaging service corriendo en http://localhost:${PORT}`);
 });
