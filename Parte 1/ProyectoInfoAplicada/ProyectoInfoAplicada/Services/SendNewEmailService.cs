@@ -26,7 +26,7 @@ namespace ProyectoInfoAplicada.Services
             var correlation = string.IsNullOrWhiteSpace(request.CorrelationId) ? Guid.NewGuid().ToString() : request.CorrelationId;
 
             // Hardcodeados 
-            string toAddress = "pablo.jru10@gmail.com";
+            string toAddress = "itsgamc@gmail.com";
             string subject = "Prueba Gmail API";
             string body = "Adjunto PDF desde Gmail API";
 

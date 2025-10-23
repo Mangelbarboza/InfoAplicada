@@ -36,7 +36,7 @@ namespace PDFGenerationServer.Services
                     Service = "PDF Server",
                     Endpoint = "/api/Orders/GeneratePdf",
                     TimeStrap = DateTime.UtcNow.ToString("o"),
-                    Playload = new { error = "No se encontraron órdenes para el cliente." },
+                    Payload = new { error = "No se encontraron órdenes para el cliente." },
                     Success = false
                 };
                 await _logProducer.sendLog(errorLog);
@@ -113,7 +113,7 @@ namespace PDFGenerationServer.Services
                     Service = "PDF Server",
                     Endpoint = "/api/storage/upload",
                     TimeStrap = DateTime.UtcNow.ToString("o"),
-                    Playload = new { fileName = fileName },
+                    Payload = new { fileName = fileName },
                     Success = true
                 };
                 await _logProducer.sendLog(logMessage);
@@ -128,7 +128,7 @@ namespace PDFGenerationServer.Services
                     Service = "PDF Server",
                     Endpoint = "/api/storage/upload",
                     TimeStrap = DateTime.UtcNow.ToString("o"),
-                    Playload = new { error = errorContent },
+                    Payload = new { error = errorContent },
                     Success = false
                 };
                 await _logProducer.sendLog(errorLog);

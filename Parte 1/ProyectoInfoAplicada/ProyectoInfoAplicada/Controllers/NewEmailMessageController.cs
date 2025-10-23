@@ -1,10 +1,12 @@
 ﻿using Hangfire;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoInfoAplicada.Dto;
 using ProyectoInfoAplicada.Services;
 
 namespace ProyectoInfoAplicada.Controllers
 {
+    [AllowAnonymous]
     [ApiController]
     [Route("api/emails")]
     public class EmailsController : ControllerBase
@@ -27,7 +29,7 @@ namespace ProyectoInfoAplicada.Controllers
             if (string.IsNullOrWhiteSpace(req.CorrelationId))
                 req.CorrelationId = Guid.NewGuid().ToString();
 
-            var jobId = _backgroundJobClient.Enqueue<ISendNewEmailService>(svc => svc.createNewEmailJob(req));
+            var jobId = _backgroundJobClient.Schedule<ISendNewEmailService>(svc => svc.createNewEmailJob(req), TimeSpan.FromMinutes(1));
 
             await _fileLogger.AppendCompletePetitionLog(req.CorrelationId!, "EmailEnqueue", "/api/emails/enqueue-simple", new { JobId = jobId }, true);
 
